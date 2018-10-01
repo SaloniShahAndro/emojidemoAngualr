@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  text: string = '';
+  openPopup: Function;
+
+  setPopupAction(fn: any) {
+    this.openPopup = fn;
+    console.log('setPopupAction');
+
+  } 
+
+
+
 }
